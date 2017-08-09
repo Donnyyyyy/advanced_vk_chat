@@ -1,7 +1,6 @@
-app = require('../app.js').app
+router = require('../app.js').router
+settings = require('../settings')
 
-app.get('/', function (req, res) {
-  res.json({
-    'text': 'helloworld!'
-  })
+router.all('/', function (req, res) {
+  res.send(settings.VERIFICATION_STRING)
 })

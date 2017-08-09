@@ -33,9 +33,12 @@ function setupControllers(controllersFolder) {
 }
 
 var app = bootstrap()
+var appRouter = express.Router()
+app.use('/vk-chat', appRouter);
 
 module.exports = {
-    app: app
+    app: app,
+    router: appRouter
 }
 
 setupControllers(settings.CONTROLLERS_FOLDER)
