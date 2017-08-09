@@ -7,7 +7,6 @@ var settings = require('./settings')
 
 function bootstrap() {
     let app = express()
-    setupControllers(settings.CONTROLLERS_FOLDER)
 
     app.set('views', './views')
     app.set('view engine', 'pug')
@@ -34,3 +33,9 @@ function setupControllers(controllersFolder) {
 }
 
 var app = bootstrap()
+
+module.exports = {
+    app: app
+}
+
+setupControllers(settings.CONTROLLERS_FOLDER)
