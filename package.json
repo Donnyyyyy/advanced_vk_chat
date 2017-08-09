@@ -1,0 +1,24 @@
+{
+  "name": "advanced_vk_chat",
+  "version": "0.0.0",
+  "description": "Vk bot for chatting",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:Donnyyyyy/advanced_vk_chat.git"
+  },
+  "author": "Dmitrii Donetskii, Daniil Horvat",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Donnyyyyy/advanced_vk_chat/issues"
+  },
+  "homepage": "https://github.com/Donnyyyyy/advanced_vk_chat#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}
