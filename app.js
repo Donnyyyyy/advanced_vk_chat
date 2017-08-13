@@ -1,9 +1,13 @@
 var express = require('express')
 var bodyParser = require('body-parser')
 var filesystem = require('fs');
-
+var connect = require('./bootstrapers/serverConnect')
 var settings = require('./settings')
+var messagesGet = require('./messages/get')
+var messageSend = require('./messages/send')
+var updateHandler = require('./update_handlers/longPollHandler')
 
+const DIMAS_ID = 233650480
 
 function bootstrap() {
     let app = express()
@@ -19,6 +23,9 @@ function bootstrap() {
     let server = app.listen(settings.PORT, () => {
         console.log(`Running at ${server.address().address}:${server.address().port}`)
     })
+
+    connect(updateHandler)
+
     return app
 }
 

@@ -1,0 +1,8 @@
+{
+    "DEBUG": true,
+    "CONTROLLERS_FOLDER": "./controllers/",
+    "PORT": 3000,
+    "VERIFICATION_STRING": "1cc06763",
+    "ACCESS_TOKEN": "fa510acd4baea8334a794dcc1c1ee7d4f2ac9815c759fdbdae881a56d58338cb4288de71864209126a361",
+    "VK_API_URL": "https://api.vk.com/method"
+}

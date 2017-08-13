@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Donnyyyyy/advanced_vk_chat#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "build-url": "^1.0.10",
     "express": "^4.15.3"
   }
 }
